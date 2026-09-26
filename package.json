@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0 --port 3000",
     "build": "next build",
-    "start": "node lib/seed.js && node .next/standalone/server.js",
+    "start": "node lib/seed.js && HOSTNAME=0.0.0.0 node .next/standalone/server.js",
     "seed": "node lib/seed.js"
   },
   "engines": {
